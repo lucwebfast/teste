@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="doc/css/style.css">
+</head>
+<body>
+	<header class="header">
+     <input type="radio" name="menu" id="menu" hidden>
+     <input type="radio" name="menu" id="fecha" hidden>
+
+<label for="menu">
+   <img src="doc/icons/menu.png" alt="" style="width:70px;">
+</label>
+
+<nav>
+<label for="fecha">
+   <img src="doc/icons/error.png" alt="" style="width:150px;">
+</label>
+    <a href="#" title="">INICIO</a>
+	<a href="#" title="">PAGINAS</a>
+	<a href="#" title="">BLOG</a>
+	<a href="#" title="">GALLERIA</a>
+	<a href="#" title="">CONTATO</a>
+</nav>
+		<div>
+			<h2>AVAILABLE IN STORES!</h2>
+			<strong>BASIXX EP</strong>
+		</div>
+	</header>
+
+    <section class="slide">
+ 
+  <div>
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="doc/image/home-1-333x333.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="doc/image/home-2-333x333.jpg" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div style="left:30px;position:absolute;bottom:10px;z-index:9999;">
+   
+
+ </div>
+</div>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    	</div>
+
+    	<div>
+
+    	<b>2019</b>
+    	<h3>madison square</h3>
+        
+        <div>
+  <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+   <hr>
+  <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+   <hr>
+  <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+   <hr>
+  <audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+  </audio>
+        </div>
+ 		
+    </div>
+    </section>
+
+   <div class="meio">
+   	<h4>A FEW WORDS <span>ABOUT</span> MADISON</h4>
+   	<br><p>Daniel Madison, better known by his stage name Madison, is a 27 y.o. singer and rapper, born and raised in Los Angeles.</p>
+<br><br>
+<p>He broke into music scene with his first mixtape M.A.D, released in June 2015. Since then, he has been building his career as R&B performer with numerous releases.</p>
+
+
+   </div>
+
+
+</body>
+</html>
